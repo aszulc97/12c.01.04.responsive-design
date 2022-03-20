@@ -1,0 +1,236 @@
+body {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+:root {
+  --darkblue: #00072e;
+  --sand: rgb(253, 248, 243);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--darkblue);
+}
+
+nav * {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+}
+
+button {
+  border-radius: 5px;
+  color: var(--darkblue);
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+
+.header_text {
+  margin: 10rem 5rem 10rem 20rem;
+  max-width: 60ch;
+}
+
+header {
+  background-color: var(--sand);
+  display: flex;
+  align-items: center;
+}
+
+.header_graphics {
+  background-image: url("1.jpg");
+  background-size: 150%;
+  height: 30vw;
+  width: 30vw;
+  margin: 5rem auto;
+  border-radius: 5%;
+}
+
+#advantages {
+  background-color: white;
+  color: var(--darkblue);
+  padding: 1rem;
+}
+
+#advantages > * {
+  margin: 3rem;
+}
+
+.advantages_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  gap: 2rem;
+}
+
+.advantages_card_graphics {
+  background-image: url("2.jpg");
+  background-size: 100%;
+  min-width: 15vw;
+  min-height: 15vw;
+  margin: 2rem;
+}
+
+.advantages_card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  align-items: center;
+}
+
+#product {
+  background-color: var(--sand);
+  padding: 1rem 0 4rem 0;
+}
+
+#product h2 {
+  margin: 2rem 4rem;
+}
+
+.product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 15rem;
+}
+
+.product_graphics {
+  background-image: url("3.jpg");
+  background-size: 100%;
+  height: 20vw;
+  width: 20vw;
+}
+
+.highlight {
+  padding: 2rem;
+  background-color: var(--darkblue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.highlight h2 {
+  font-size: 4rem;
+  margin: 0 4rem;
+}
+
+.highlight_small_cards {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.highlight_small_cards > * {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+#team {
+  padding: 2rem;
+  background-color: var(--sand);
+}
+
+#team h2 {
+  margin: 0 4rem;
+}
+
+#team article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 3rem 20rem;
+}
+
+#team article * {
+  margin: 1rem;
+}
+
+.team_graphics {
+  background-image: url("1.jpg");
+  background-size: 100%;
+  height: 10vw;
+  width: 10vw;
+  order: 2;
+}
+
+.team_text {
+  order: 1;
+}
+
+#contact {
+  padding: 2rem;
+}
+
+#contact h2,
+#contact p {
+  margin: 0 4rem;
+}
+
+#contact_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem 20rem;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.message {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+textarea {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.form_group button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: var(--darkblue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+footer section {
+  display: flex;
+}
+
+footer section div {
+  margin: 0 2rem;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul * {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
