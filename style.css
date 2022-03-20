@@ -1,6 +1,7 @@
 body {
   font-size: 1.3rem;
   margin: 0;
+  width: 100%;
 }
 
 :root {
@@ -36,7 +37,7 @@ button {
 }
 
 .header_text {
-  margin: 10rem 5rem 10rem 20rem;
+  margin: 10rem 5rem 10rem 17vw;
   max-width: 60ch;
 }
 
@@ -49,8 +50,8 @@ header {
 .header_graphics {
   background-image: url("1.jpg");
   background-size: 150%;
-  height: 30vw;
-  width: 30vw;
+  min-height: 30vw;
+  min-width: 30vw;
   margin: 5rem auto;
   border-radius: 5%;
 }
@@ -67,7 +68,7 @@ header {
 
 .advantages_cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 2rem;
 }
 
@@ -233,4 +234,74 @@ footer ul * {
   text-decoration: none;
   list-style: none;
   color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+  .header_graphics,
+  .header_text {
+    margin: 0.5rem 2rem;
+  }
+
+  .header_graphics {
+    min-width: 90vw;
+    min-height: 90vw;
+  }
+
+  .advantages_card_graphics,
+  .product_graphics,
+  .team_graphics {
+    min-width: 50vw;
+    min-height: 50vw;
+  }
+
+  #advantages {
+    padding: 0;
+  }
+
+  .product {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .highlight h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .highlight_small_cards {
+    flex-direction: column;
+  }
+
+  #team article {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact h2,
+  #contact p {
+    margin: 1rem;
+  }
+
+  #contact_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
